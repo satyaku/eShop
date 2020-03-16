@@ -15,3 +15,4 @@ Assumptions made ::::::
 Database schema is checked in along with the code in git.
 https://github.com/satyaku/eShop.git -- DBSchema.png
 
+H2 in memory database, intellij, windows 10, spring boot, spring jdbc has been used for development of this project.
