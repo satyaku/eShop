@@ -23,7 +23,6 @@ public class Product {
     private String item_size;
     private String color;
     private Long price;
-    private Long brand_id;
-    private Long seller_id;
     private Long total_count;
+    private String status;
 }

@@ -1,4 +1,5 @@
 package com.shopping.eshop;
+import com.shopping.eshop.repository.BrandRepository;
 import com.shopping.eshop.repository.ProductRepository;
 
 import org.springframework.context.annotation.Bean;
@@ -13,9 +14,15 @@ import io.r2dbc.spi.ConnectionFactory;
 
 @Configuration
 public class EshopConfiguration {
+
     @Bean
-    ProductRepository repository(R2dbcRepositoryFactory factory) {
+    ProductRepository productRepository(R2dbcRepositoryFactory factory) {
         return factory.getRepository(ProductRepository.class);
+    }
+
+    @Bean
+    BrandRepository brandRepository(R2dbcRepositoryFactory factory) {
+        return factory.getRepository(BrandRepository.class);
     }
 
     @Bean
