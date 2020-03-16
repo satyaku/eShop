@@ -13,4 +13,5 @@ Assumptions made ::::::
 
 
 Database schema is checked in along with the code in git.
+https://github.com/satyaku/eShop.git -- DBSchema.png
 
